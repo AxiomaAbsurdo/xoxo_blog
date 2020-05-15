@@ -6,11 +6,16 @@ const express = require('express');
 const app = new express();
 
 app.use(express.static('public'));
+app.use(expressEdge.engine);
+app.set('views', __dirname + '/views');
 
 
 //GET INDEX PAGE AND LOAD IT
+// app.get('/index', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, 'pages/index.html'));
+// });
 app.get('/index', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'pages/index.html'));
+    res.render('/index');
 });
 
 //GET ABOUT PAGE AND LOAD IT
