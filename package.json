@@ -22,6 +22,6 @@
     "express": "^4.17.1",
     "express-edge": "^2.0.2",
     "nodemon": "^2.0.3",
-    "startbootstrap-clean-blog": "^5.0.8"
+    "startbootstrap-clean-blog": "^5.0.9"
   }
 }
